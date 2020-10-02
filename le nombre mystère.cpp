@@ -3,16 +3,16 @@
 #include <time.h>
 #include <conio.h>
 
-//Déclaration de type de tableaux
+//DÃ©claration de type de tableaux
 typedef struct { int score;
                  int difficulte;}resultat;
                  
-//Procédure de lecture de résultat
+//ProcÃ©dure de lecture de rÃ©sultat
 void resultatfinal (resultat T[100] , int d , int nr , int s)
 { T[nr].difficulte = d;
   T[nr].score = s;}
   
-//Procédure d affichage de résultat final
+//ProcÃ©dure d affichage de rÃ©sultat final
 void affichage (resultat T[100],int nr)
 {int i;
  for ( i = 0 ; i < nr ; i++)
@@ -31,7 +31,7 @@ void affichage (resultat T[100],int nr)
   printf("\n");}}
 
 main()
-{ //Déclaration des variables
+{ //DÃ©claration des variables
   int ne,nm,d,c,s = 0;
   int max,min = 1,nr = 0;
   resultat T[100];
@@ -47,7 +47,7 @@ main()
  	   {printf("\tErreur vous devez choisir entre 1 et 2 et 3");}
  	    printf("\n");}while( d != 1 && d != 2 && d != 3 );
 		    
- 	//Le traitement de difficulté
+ 	//Le traitement de difficultÃ©
  	switch(d)
     {
 	case 1 :
@@ -74,7 +74,7 @@ main()
        s++;
     }while( ne != nm );
     printf("\n");
-    
+	 //
     //Affichage de score
     printf("Bravo, vous avez trouver le nombre mystere en %d coups!!!\a\n",s);
  	printf("\n");
